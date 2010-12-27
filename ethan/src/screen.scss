@@ -1,0 +1,56 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+body{
+	font-family:Georgia;
+	background-image:url('../backgrounds/black_weave.png');
+}
+
+header{
+	height:100px;
+}
+
+#page{
+	margin:0px auto;
+	width:600px;
+	min-height:400px;
+	padding:20px;
+	//background-image:url('../backgrounds/board.png');
+	//background-position:0% 10%;
+	background-color:#333333;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 5px #1D1D1D;
+	-webkit-box-shadow: 0 0 5px #1D1D1D;
+	box-shadow: 0 0 5px #1D1D1D;
+}
+
+.note{
+	width:400px;
+	background-image:url('../backgrounds/paper_lines.png');
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 5px #1D1D1D;
+	-webkit-box-shadow: 0 0 5px #1D1D1D;
+	box-shadow: 0 0 5px #1D1D1D;
+	p{
+		line-height:25px;
+		padding:28px 30px 20px 30px;
+		color:#535353;
+	}
+}
+
+.image_group{
+	width:600px;
+	text-align:center;
+	padding:30px;
+	opacity:.7;
+}
+
+

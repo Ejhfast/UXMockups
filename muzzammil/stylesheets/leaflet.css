@@ -1,0 +1,240 @@
+* { margin: 0; padding: 0; }
+/*--------------------------------------------
+Global Styles
+---------------------------------------------*/
+body {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+	color: #fff;
+	background: #1e1e1e url('../images/texture.jpg') repeat	top left;
+}
+/*div.container { width: 960px; margin: 0 auto; }*/
+div#main{
+	width:720px;
+	margin:0 auto;
+}
+div#header{
+	height:53px;
+	padding-top:50px;
+	margin-bottom:15px;
+	border-bottom:1px solid #3C4048;
+}
+
+div#timeline{
+	padding-bottom:15px;
+	height:381px;
+	width:720px;
+	margin-bottom:18px;
+	position: relative;
+	-webkit-box-shadow:  0 2px 6px #000; 
+	-moz-box-shadow: 0 2px 6px #000; 
+	box-shadow: 0 2px 6px #000; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius:  3px;
+	border-radius: 3px;
+	
+}
+div#services{
+	height:116px;
+	width:720px;
+	position: relative;
+	-webkit-box-shadow:  0 2px 6px #000; 
+	-moz-box-shadow: 0 2px 6px #000; 
+	box-shadow: 0 2px 6px #000; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius:  3px;
+	border-radius: 3px;
+}
+div#footer{
+/*	border-top:1px solid #3C4048;*/
+	height:30px;
+	background:url("../images/h_seperator.png") repeat-x scroll center top transparent;
+}
+div#app_info {
+/*	background: url('../images/spotlight.jpg') no-repeat top center;*/
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+div#app_info div.timeline {
+	width: 500px;
+	border-right:1px solid #292929;
+	float: left;
+}
+div#app_info div.navigation {
+	float: right;
+	width: 400px;
+	padding-left:55px;
+}
+	div#app_info div.phones {
+		height: 625px;
+		width: 421px;
+		background: url('../images/phones.png') no-repeat top;
+		float: left;
+	}
+	div#app_info div.info {
+		float: right;
+		width: 500px;
+		margin-top: 100px;
+	}
+		div#app_info h1 {
+			width: 315px;
+			height: 80px;
+			background: url('../images/logo.png') no-repeat top;
+			text-indent: -999999px;
+			display: block;
+		}	
+			div#app_info h1 a{ 
+				text-indent: 0px; 
+				float: right; 
+				font-size: 13px;
+				color: #fff;
+				text-decoration: none;
+				padding: 5px 10px 5px 10px;
+				background: #2b292c;
+				-moz-border-radius: 8px;
+				-webkit-border-radius: 8px;
+				font-weight: normal;
+				margin-right: -110px;
+				margin-top: 35px;
+				color: #bbb;
+			}
+				div#app_info h1 a:hover { color: #fff; background: #2d2d2d; }
+		div#app_info .info p {
+			font-size: 15px;
+			line-height: 26px;
+			text-shadow: 2px 1px 8px #000;
+			margin: 38px 0px 23px 0px;
+		}
+		div.app_store {
+			margin-bottom: 18px;
+			margin-left: -12px;
+			position: relative;
+			height: 105px;
+		}
+			div.app_store a.off,
+			div.app_store a.on {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 326px;
+				height: 105px;
+				background: url('../images/app_store.png') no-repeat top;
+				text-indent: -999999px;
+			}
+			div.app_store a.on {
+				display: none;
+				background-position: bottom left;
+			}
+		div#app_info span {
+			font-size: 12px;
+			color: #828282;
+			font-style: italic;
+		}
+			div#app_info span a {
+				text-decoration: none;
+				color: #859f5d;
+			}
+				div#app_info span a:hover { text-shadow: 0px 0px 20px #fff; }
+div#app_details {
+	background: url('../images/h_seperator.png') repeat-x top;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+div#app_details div.services ul{list-style:none}
+div#app_details div.services ul img{margin-left:50px;}
+
+	div#app_details div.screenshots {
+		width: 460px;
+		float: left;
+		border-right: 1px solid #292929;
+		padding-left: 12px;
+	}
+		div#app_details div.screenshots ul{ list-style: none; }
+			div#app_details div.screenshots ul li {
+				float: left;
+				margin-right: 30px;
+				margin-bottom: 30px;
+				position: relative;
+			}
+			div#app_details div.screenshots ul li.nomargin { margin-right: 0; }
+			div#app_details div.screenshots ul li.bottom { margin-bottom: 0; }
+			div#app_details div.screenshots ul li span {
+				background: url('../images/enlarge.png') no-repeat top left;
+				width: 185px;
+				height: 130px;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: none;
+			}
+	div#app_details div.features {
+		width: 430px;
+		float: right;
+		padding-left: 55px;
+	}
+		div#app_details div.features ul{ list-style: none; margin-bottom: 30px; }
+			div#app_details div.features ul li {
+				color: #8f8f8f;
+				font-size: 15px;
+				margin-bottom: 8px;
+				background: url('../images/bullet.png') no-repeat	center left;
+				padding-left: 25px;
+				margin-left: -3px;
+			}
+			div#app_details div.features ul.requirements li {
+				background: none;
+				padding-left: 0px;
+				margin-left: 0;
+			}
+/*div#footer {
+	background: url('../images/h_seperator.png') repeat-x top;
+	padding-top: 20px;
+	padding-bottom: 80px;
+}*/			
+/*	div#footer ul { list-style: none; }
+		div#footer ul li {
+			float: left;
+			width: 215px;
+			margin-right: 33px;
+		}
+		div#footer ul li.copyright { margin-right: 0; }
+			div#footer ul li a{
+				background: url('../images/icons.png') no-repeat top left;
+				height: 37px;
+				display: block;
+				padding-left: 54px;
+				color: #555;
+				font-size: 12px;
+				text-decoration: none;
+				line-height: 20px;
+			}
+					div#footer ul li.twitter a:hover { background-position: 0px -149px; }
+				div#footer ul li.help a{ background-position: 0px -37px; }
+					div#footer ul li.help a:hover { background-position: 0px -186px; }
+				div#footer ul li.press a{ background-position: 0px -74px; }
+					div#footer ul li.press a:hover { background-position: 0px -223px; }
+				div#footer ul li.copyright a{ background-position: 0px -111px; }
+					div#footer ul li.copyright a:hover { color: #555; cursor: default; }
+				div#footer ul li a span { color: #83b546; }
+				div#footer ul li a:hover { color: #ccc; }*/
+/*--------------------------------------------
+Typography
+---------------------------------------------*/
+h2 {
+	font-size: 24px;
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 18px;
+}
+
+tr.notes a{color:red;}
+tr.notes a:visited{color:red;}
+/*--------------------------------------------
+Utilities
+---------------------------------------------*/
+.clear { clear: both; }
+img { border: none;}
+a { outline: none; -moz-outline: none; color:#859F5D; text-decoration:none;  }
+a:hover {color:#859F5D;text-shadow: 0px 0px 20px #fff;}
